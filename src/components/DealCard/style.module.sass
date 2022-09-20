@@ -1,4 +1,19 @@
 .card
     padding: 10px
     margin: 10px
-    border: 2px solid black
+    font-size: 30px
+    display: flex 
+    justify-content: center
+    align-items: center
+    color: white
+    position: relative
+
+    &:hover .close
+        display: block
+
+.close
+    display: none
+    position: absolute
+    top: 0
+    right: 0
+    transform: translate(50%, -50%)

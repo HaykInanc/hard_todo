@@ -29,8 +29,14 @@ export default function AddDeal({addNewDeal}) {
   return (
     <form className={s.container} onSubmit={submit}>
         <div className={s.input_container}>
-            <Select name='day' options={day_options} />
-            <Select name='importance' options={importance_options} />
+            <Select 
+              placeholder='День' 
+              name='day' 
+              options={day_options} />
+            <Select 
+              placeholder='Важность' 
+              name='importance' 
+              options={importance_options} />
             <input placeholder='Описание' className={s.descr} type="text" name='descr'/>
         </div>
         <Button>Добавить</Button>
